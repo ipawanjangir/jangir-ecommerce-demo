@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al Riyada | Luxury Furniture & Electronics — Dubai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ANNOUNCEMENT BAR -->
+    <div class="topbar">
+        <p>✦ Free Delivery Across UAE on Orders Above AED 500 ✦</p>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <div class="logo">
+                <span class="logo-mark">AR</span>
+                <div>
+                    <h1>Al Riyada</h1>
+                    <p>Premium Trading LLC</p>
+                </div>
+            </div>
+            <nav class="nav">
+                <a href="#products">Collection</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-btn" id="cartBtn">
+                    🛒 <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <a href="https://wa.me/971555555555" class="btn-gold" target="_blank">WhatsApp</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-content">
+            <p class="hero-tag">Since 1994 · Deira, Dubai</p>
+            <h2>Timeless Furniture.<br><em>Trusted Brands.</em></h2>
+            <p class="hero-sub">IKEA · LG · Samsung · Bosch · Siemens · Miele · Hitachi</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn-gold">Shop Collection</a>
+                <a href="https://wa.me/971555555555" class="btn-outline" target="_blank">Enquire on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <section class="trust-bar">
+        <div class="container trust-grid">
+            <div class="trust-item"><span>30+</span>
+                <p>Years in Dubai</p>
+            </div>
+            <div class="trust-item"><span>50+</span>
+                <p>Global Brands</p>
+            </div>
+            <div class="trust-item"><span>1000+</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="trust-item"><span>100%</span>
+                <p>Quality Assured</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products" id="products">
+        <div class="container">
+            <p class="section-tag">Our Collection</p>
+            <h2 class="section-title">Curated Products</h2>
+            <p class="section-sub">Handpicked furniture and appliances for discerning homes and businesses</p>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Furniture">Furniture</button>
+                <button class="filter-btn" data-filter="Electronics">Electronics</button>
+                <button class="filter-btn" data-filter="Appliances">Appliances</button>
+            </div>
+
+            <div class="product-grid" id="productGrid"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container about-inner">
+            <div class="about-text">
+                <p class="section-tag">About Al Riyada</p>
+                <h2 class="section-title-left">Three Decades of Trust</h2>
+                <p>Since 1994, Al Riyada has been the trusted name in Deira for premium furniture, branded electronics,
+                    and quality appliances. We serve homes, hotels, offices, and restaurants across the UAE.</p>
+                <p>Every piece in our collection is handpicked for quality, durability, and design. From IKEA to Miele,
+                    we bring the world's finest brands to your doorstep.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>1994</h3>
+                    <p>Established</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Deira</h3>
+                    <p>Showroom Location</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <p class="section-tag-light">Get in Touch</p>
+            <h2 class="section-title-light">Visit Us Today</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>📍 Address</h4>
+                    <p>Office 1, Furniture Building,<br>Naif Street, Deira, Dubai</p>
+                </div>
+                <div class="contact-card">
+                    <h4>📞 Phone</h4>
+                    <p>055 5XX XXXX<br>052 9XX XXXX</p>
+                </div>
+                <div class="contact-card">
+                    <h4>🕒 Hours</h4>
+                    <p>Sat – Thu: 10 AM – 10 PM<br>Friday: 2 PM – 10 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <h4>Al Riyada Used Electronics & Furniture Trading LLC</h4>
+                <p>Deira, Dubai, United Arab Emirates</p>
+            </div>
+            <p class="copyright">© 2026 Al Riyada. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer" id="cartFooter">
+            <div class="cart-row">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">AED 0</span>
+            </div>
+            <div class="cart-row">
+                <span>Delivery</span>
+                <span>Free</span>
+            </div>
+            <div class="cart-row total">
+                <span>Total</span>
+                <span id="cartTotal">AED 0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Checkout via WhatsApp</button>
+        </div>
+    </aside>
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">✕</button>
+            <h3>Complete Your Order</h3>
+            <p class="modal-sub">Fill in your details and confirm via WhatsApp</p>
+
+            <form id="checkoutForm">
+                <input type="text" id="custName" placeholder="Full Name" required>
+                <input type="tel" id="custPhone" placeholder="Phone Number" required>
+                <input type="text" id="custAddress" placeholder="Delivery Address" required>
+                <select id="custEmirate" required>
+                    <option value="">Select Emirate</option>
+                    <option>Dubai</option>
+                    <option>Abu Dhabi</option>
+                    <option>Sharjah</option>
+                    <option>Ajman</option>
+                    <option>Ras Al Khaimah</option>
+                    <option>Fujairah</option>
+                    <option>Umm Al Quwain</option>
+                </select>
+                <textarea id="custNotes" placeholder="Additional Notes (optional)" rows="2"></textarea>
+                <button type="submit" class="checkout-btn">Confirm Order on WhatsApp</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
